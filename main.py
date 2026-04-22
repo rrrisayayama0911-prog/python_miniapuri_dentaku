@@ -1,11 +1,35 @@
-#数字を入力して表示する
 
-num=input("数字を入力してね:")
-print(f"入力した数字：{num}")
+#2つの数字を足し算する
 
-#2つに数字を扱う
 
-a=input("1番目の数字：")
-b=input("2番目の数字")
-print(f"a={a}")
-print(f"b={b}")
+while True:
+    a =input("1つ目の数字：")
+    b=input("2つ目の数字：")
+
+    if not a.isdigit() or not b.isdigit():
+        print("数字を入力してね")
+        continue
+    #inputは文字列より、int()関数で数値や文字列を整数型に変換する
+    a =int(a)
+    b=int(b)
+ 
+    result=a+b
+    print("結果：",result)
+
+    break
+
+
+while True:
+    try:
+
+        #inputは文字列より、int()関数で数値や文字列を整数型に変換する
+        a=int(input("1つ目の数字："))
+        b=int(input("2つ目の数字："))
+        break
+    except:
+        print("数字を入力してね")
+
+result=a+b
+print("結果",result)
+
+
